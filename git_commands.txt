@@ -1,0 +1,38 @@
+
+**************************** COMANDOS GIT ****************************
+
+*Initial configuration:
+	$ git config --global user.name <username>
+	$ git config --global user.email <email>
+	$ git config --global core.editor <nano>
+	$ git config --list
+
+*Local working:
+	$ git init
+	GitHub --> Fork
+	$ git clone <URL>
+	$ git status
+	$ git add <file_name>
+	$ git commit -m <"message">
+	$ git mv <file_name> <new_file_name>
+	$ git rm -f <file_name>
+	$ git --no-pager log
+	$ git diff <commit-id-1> <commit-id-2>
+	$ $ git checkout <commit_hash>
+
+*Remote working:
+	$ git remote –v
+	$ git remote add <remote_name> <URL>
+	$ git fetch <remote_name>
+	$ git merge <remote_name>
+	$ git pull <remote_name> <brach_name>
+	$ git push <remote_name> <brach_name>
+	$ git diff --stat --cached <remote_name> / <brach_name>
+	$ git config --global credential.helper "cache --timeout=172800"
+
+*Branching:
+	$ git branch
+	$ git branch <brach_name>
+	$ git branch <brach_name> <origin_brach_name>
+	$ git checkout <brach_name>
+	$ git checkout -b <brach_name>
